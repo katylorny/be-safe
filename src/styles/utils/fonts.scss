@@ -1,0 +1,35 @@
+// MuseoSansCyrl  MuseoSansCyrl-900
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/museo-sans-cyrl.woff2") format("woff2"), url("../fonts/museo-sans-cyrl.woff") format("woff");
+  font-display: swap;
+}
+
+// PTSans-Bold
+@font-face {
+  font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2"), url("../fonts/pt-sans-bold.woff") format("woff");
+  font-display: swap;
+}
+
+// PTSans-Regular
+@font-face {
+  font-family: "PT Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2"), url("../fonts/pt-sans-regular.woff") format("woff");
+  font-display: swap;
+}
+
+//PT Sans Caption
+@font-face {
+  font-family: "PT Sans Caption";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-caption.woff2") format("woff2"), url("../fonts/pt-sans-caption.woff") format("woff");
+  font-display: swap;
+}

@@ -1,0 +1,24 @@
+.about-us {
+  border-radius: 10px;
+  margin-top: -41px;
+  background: white;
+  padding: 35px 50px 26px 45px;
+  box-shadow: 0 5px 15px -1px rgba(253, 192, 192, 1);
+
+  h2 {
+    font-family: $pt-sans-bold;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+}
+
+.about-us__read-more {
+  background: transparent;
+  color: $c-burgundy;
+  font-family: $pt-sans-bold;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0;
+}

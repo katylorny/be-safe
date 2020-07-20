@@ -1,0 +1,23 @@
+@import "../mixins/media";
+
+.header {
+  padding: 26px 10px 26px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.logo__img {
+  background: black;
+  width: 82px;
+  height: 22px;
+}
