@@ -1,3 +1,23 @@
 .footer {
+  padding: 33px 0 36px;
+}
 
+.footer__wrapper {
+  display: flex;
+}
+
+.footer__logo {
+  background: black;
+  width: 82px;
+  height: 22px;
+}
+
+.footer__nav {
+  margin-left: auto;
+}
+
+.footer__link {
+  margin-left: 100px;
+  font-family: $pt-sans-bold;
+  color: black;
 }
