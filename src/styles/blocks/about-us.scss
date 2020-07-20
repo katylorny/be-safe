@@ -2,7 +2,7 @@
   border-radius: 10px;
   margin-top: -41px;
   background: white;
-  padding: 35px 50px 26px 45px;
+  padding: 35px 21px 26px 45px;
   box-shadow: 0 5px 15px -1px rgba(253, 192, 192, 1);
 
   h2 {
@@ -12,6 +12,29 @@
     margin-top: 0;
   }
 
+  p {
+    margin-top: 0;
+  }
+
+}
+
+.about-us__text {
+  padding-bottom: 7px;
+}
+
+.about-us__text--closed {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.7287289915966386) 59%, rgba(255, 255, 255, 0) 100%);
+  }
 }
 
 .about-us__read-more {
