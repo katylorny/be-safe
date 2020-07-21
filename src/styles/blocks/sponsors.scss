@@ -10,3 +10,13 @@
   align-items: center;
 }
 
+.sponsors__wrapper.container {
+  @media (max-width: $tablet-width) {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+}
+
+.sponsors__item.swiper-slide {
+  width: auto;
+}

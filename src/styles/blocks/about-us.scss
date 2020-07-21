@@ -1,9 +1,22 @@
+.about-us {
+  @media (max-width: $tablet-width) {
+    background: white;
+  }
+}
+
 .about-us__wrapper {
   border-radius: 10px;
   margin-top: -41px;
   background: white;
   padding: 35px 50px 26px 45px;
   box-shadow: 0 5px 15px -1px rgba(253, 192, 192, 1);
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 20px 52px 25px 18px;
+  }
 
   h2 {
     font-family: $pt-sans-bold;
@@ -35,6 +48,12 @@
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 0.7287289915966386) 59%, rgba(255, 255, 255, 0) 100%);
   }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .about-us__read-more {
@@ -44,4 +63,10 @@
   font-size: 16px;
   font-weight: bold;
   padding: 0;
+}
+
+.about-us__additional-text {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }

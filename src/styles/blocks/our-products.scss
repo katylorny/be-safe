@@ -6,7 +6,12 @@
   h2 {
     margin: 0 auto 10px;
   }
+}
 
+.our-products.container {
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+  }
 }
 
 .our-products__list {
@@ -17,13 +22,17 @@
 }
 
 .our-products__item {
-  max-width: 300px;
-  width: 30%;
-  min-height: 210px;
+  width: 300px;
+  height: 210px;
   background: white;
   border-radius: 10px;
   box-shadow: 0 5px 15px -1px rgba(253, 192, 192, 1);
-  padding-top: 152px;
+  //padding-top: 152px;
+
+  @media (max-width: $tablet-width) {
+    width: 300px;
+    height: 210px;
+  }
 
   h3 {
     text-align: center;

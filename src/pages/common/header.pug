@@ -1,8 +1,14 @@
 header.header
   .header__wrapper.container
-    a.header__logo.logo
-      .logo__img
+    .header__mobile-wrapper
+      a.header__logo.logo
+        .logo__img
+      button.header__menu-open-button
     nav.header__nav.nav
-      a.nav__item.link(href="#") Products
-      a.nav__item.link(href="#") About us
-      a.nav__item.link(href="#") Contacts
+      ul.nav__list
+        li.nav__item
+          a.nav__link.link(href="#") Products
+        li.nav__item
+          a.nav__link.link(href="#") About us
+        li.nav__item
+          a.nav__link.link(href="#") Contacts
