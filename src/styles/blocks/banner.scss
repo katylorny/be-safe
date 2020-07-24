@@ -1,11 +1,30 @@
 .banner {
   min-height: 484px;
-  background: rgb(252, 179, 181);
-  background: linear-gradient(360deg, rgba(252, 179, 181, 1) 0%, rgba(253, 231, 230, 1) 35%, rgba(255, 242, 241, 1) 100%);
+  //background: rgb(252, 179, 181);
+  //background: linear-gradient(360deg, rgba(252, 179, 181, 1) 0%, rgba(253, 231, 230, 1) 35%, rgba(255, 242, 241, 1) 100%);
+  background: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: 50%;
   padding-top: 74px;
+  position: relative;
 
   @media (max-width: $tablet-width) {
     min-height: 600px;
+    background: linear-gradient(0deg, rgba(253,211,210,1) 0%, rgba(255,241,240,1) 26%, rgba(255,241,240,1) 100%);
+  }
+
+  &::after {
+    @media (max-width: $tablet-width) {
+      width: 375px;
+      height: 256px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      background: url("../img/banner-mobile.jpg");
+      background-size: cover;
+    }
   }
 
   h1 {

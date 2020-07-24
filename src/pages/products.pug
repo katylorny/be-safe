@@ -1,5 +1,8 @@
 extends common/layout
 
+block header
+  include common/header
+
 block content
   main.main.main--products
     section.products
@@ -79,4 +82,5 @@ block content
         .products__buttons
           button.button.products__button.products__button--catalog(type="button") Download catalog
           button.button.products__button.products__button--connect(type="button") Connect with us
+
 

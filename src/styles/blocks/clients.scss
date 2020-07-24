@@ -1,8 +1,8 @@
-.sponsors {
+.clients {
   padding: 75px 0 75px;
 }
 
-.sponsors__list {
+.clients__list {
   padding: 0;
   list-style: none;
   display: flex;
@@ -10,13 +10,13 @@
   align-items: center;
 }
 
-.sponsors__wrapper.container {
+.clients__wrapper.container {
   @media (max-width: $tablet-width) {
     overflow-x: hidden;
     max-width: 100%;
   }
 }
 
-.sponsors__item.swiper-slide {
+.clients__item.swiper-slide {
   width: auto;
 }

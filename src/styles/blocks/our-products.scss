@@ -11,6 +11,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   .swiper-pagination-bullet {
@@ -50,6 +54,11 @@
   background: white;
   border-radius: 10px;
   box-shadow: 0 5px 15px -1px rgba(253, 192, 192, 1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   //padding-top: 152px;
 
   @media (max-width: $tablet-width) {
