@@ -1,10 +1,9 @@
 extends common/layout
 
-- let isProducts = true
+include common/header
 
 block header
-  include common/header
-
+  +header('test-name')
 block content
   main.main
     .banner
@@ -37,6 +36,7 @@ block content
 
     .clients
       .clients__wrapper.container.swiper-container
+        h2 Our clients
         ul.clients__list.swiper-wrapper
           li.clients__item.swiper-slide
             img(src="img/logo-nike.svg" width="96" height="50" alt="Nike")

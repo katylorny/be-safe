@@ -1,8 +1,9 @@
 extends common/layout
 
-block header
-  include common/header
+include common/header
 
+block header
+ +header('header--products')
 block content
   main.main.main--products
     section.products
