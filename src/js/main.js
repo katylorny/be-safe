@@ -10,7 +10,12 @@ $(`.header__menu-open-button`).click(function () {
     $(`.header`).toggleClass(`header--menu-opened header--white`)
 })
 
-const swiper = new Swiper(`.swiper-container`, {
+$(`.popup__close-button`).click(function () {
+    $(`.popup`).addClass(`popup--closed`)
+    $(`body`).removeClass(`opened-popup`)
+})
+
+const swiper = new Swiper(`.our-products`, {
     slidesPerView: `auto`,
     spaceBetween: 20,
     centeredSlides: true,
@@ -19,7 +24,7 @@ const swiper = new Swiper(`.swiper-container`, {
         clickable: true,
     },
     breakpoints: {
-        // when window width is >= 640px
+    // when window width is >= 640px
         768: {
             slidesPerView: 3,
             spaceBetween: 40,
@@ -29,13 +34,27 @@ const swiper = new Swiper(`.swiper-container`, {
 })
 
 
-const swiperClients = new Swiper(`.swiper-container-clients`, {
+const swiperClients = new Swiper(`.sponsors__wrapper`, {
     slidesPerView: `auto`,
     spaceBetween: 20,
     breakpoints: {
     // when window width is >= 640px
         768: {
             slidesPerView: 5,
+            // spaceBetween: 40,
+        }
+    }
+})
+
+
+const swiperBreadcrumbs = new Swiper(`.products__sections`, {
+    slidesPerView: `auto`,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    breakpoints: {
+    // when window width is >= 640px
+        768: {
+            // slidesPerView: 5,
             // spaceBetween: 40,
         }
     }

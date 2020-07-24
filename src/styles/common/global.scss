@@ -29,7 +29,8 @@ body {
 }
 
 .overlay {
-  background: rgba(31, 65, 90, 0.6);
+  display: none;
+  background: rgba(52, 51, 51, 0.6);
   position: fixed;
   top: 0;
   left: 0;
@@ -37,10 +38,6 @@ body {
   height: 100%;
   z-index: 2;
   overflow: auto;
-}
-
-.overlay--closed {
-  display: none;
 }
 
 img {
@@ -51,7 +48,29 @@ a {
   text-decoration: none;
 }
 
-main {
+.main {
   flex: 1;
   background: $c-main;
+  //display: none;
+}
+
+.main--products {
+  background: $c-main-white;
+}
+
+.opened-popup {
+
+  .overlay {
+    display: block;
+  }
+
+  @media (max-width: $tablet-width) {
+    .main {
+      display: none;
+    }
+
+    .overlay {
+      display: none;
+    }
+  }
 }

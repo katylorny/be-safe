@@ -6,11 +6,34 @@
   h2 {
     margin: 0 auto 10px;
   }
+
+  .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    background: #fa4841;
+    width: 6px;
+    height: 6px;
+    opacity: 2;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 3px solid #fa4841;
+    border-radius: 50%;
+  }
+
 }
 
 .our-products.container {
   @media (max-width: $tablet-width) {
     max-width: 100%;
+    padding-bottom: 30px;
   }
 }
 
