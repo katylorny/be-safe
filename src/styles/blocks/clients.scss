@@ -1,5 +1,14 @@
 .clients {
   padding: 75px 0 75px;
+
+  h2 {
+    text-align: center;
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .clients__list {
