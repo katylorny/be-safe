@@ -21,6 +21,41 @@ $(`.popup__close-button`).click(function () {
 // добавить body класс .opened-popup
 // убрать у попапа класс .popup--closed
 
+function openPopup(popup) {
+  $(`.popup`).addClass(`popup--closed`)
+  popup.removeClass(`popup--closed`)
+  $(`body`).addClass(`opened-popup`)
+}
+
+
+// попапы
+
+$(`.about-us__read-more`).click(function () {
+  openPopup($(`.about`))
+})
+
+$(`.footer__link--msds`).click(function (evt) {
+  evt.preventDefault()
+  openPopup($(`.msds`))
+})
+
+$(`.footer__link--contact`).click(function (evt) {
+  evt.preventDefault()
+  openPopup($(`.contacts`))
+})
+
+$(`.nav__link--contacts`).click(function (evt) {
+  evt.preventDefault()
+  $(`.header`).removeClass(`header--menu-opened header--white`)
+  openPopup($(`.contacts`))
+})
+
+$(`.nav__link--about`).click(function (evt) {
+  evt.preventDefault()
+  $(`.header`).removeClass(`header--menu-opened header--white`)
+  openPopup($(`.about`))
+})
+
 // eslint-disable-next-line no-unused-vars
 const swiper = new Swiper(`.our-products`, {
   slidesPerView: `auto`,
@@ -64,3 +99,4 @@ const swiperBreadcrumbs = new Swiper(`.products__sections`, {
     }
   }
 })
+

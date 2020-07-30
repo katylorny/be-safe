@@ -2,7 +2,7 @@ mixin header(className)
   header.header(class=className)
     .header__wrapper.container
       .header__mobile-wrapper
-        a.header__logo.logo
+        a(href="index.html").header__logo.logo
           case className
             when 'header--products'
               img(src="img/logo-green.svg" alt="Logo" width="82" height="22")
@@ -14,6 +14,6 @@ mixin header(className)
           li.nav__item
             a.nav__link.link(href="products.html") Products
           li.nav__item
-            a.nav__link.link(href="#") About us
+            a.nav__link.nav__link--about.link(href="#") About us
           li.nav__item
-            a.nav__link.link(href="#") Contacts
+            a.nav__link.nav__link--contacts.link(href="#") Contacts
