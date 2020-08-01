@@ -11,7 +11,7 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
+    //box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3);
   }
 
   h3 {
@@ -41,9 +41,15 @@
   //width: 212px;
   width: 100%;
   height: 123px;
-  background: #f9d5d3;
+  //background: #f9d5d3;
   align-self: center;
   margin-bottom: 28px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .card__little-images {
@@ -54,7 +60,13 @@
 .card__little-img {
   width: 49px;
   height: 40px;
-  background: #f86b61;
+  //background: #f86b61;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .card__more-details {

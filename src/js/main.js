@@ -21,10 +21,14 @@ $(`.popup__close-button`).click(function () {
 // добавить body класс .opened-popup
 // убрать у попапа класс .popup--closed
 
+const body = $(`body`)
+
 function openPopup(popup) {
+  $(`.header`).removeClass(`header--menu-opened header--white`)
+  body.removeClass(`opened-menu`)
   $(`.popup`).addClass(`popup--closed`)
   popup.removeClass(`popup--closed`)
-  $(`body`).addClass(`opened-popup`)
+  body.addClass(`opened-popup`)
 }
 
 
@@ -46,14 +50,26 @@ $(`.footer__link--contact`).click(function (evt) {
 
 $(`.nav__link--contacts`).click(function (evt) {
   evt.preventDefault()
-  $(`.header`).removeClass(`header--menu-opened header--white`)
+  // $(`.header`).removeClass(`header--menu-opened header--white`)
   openPopup($(`.contacts`))
 })
 
 $(`.nav__link--about`).click(function (evt) {
   evt.preventDefault()
-  $(`.header`).removeClass(`header--menu-opened header--white`)
+  // $(`.header`).removeClass(`header--menu-opened header--white`)
   openPopup($(`.about`))
+})
+
+$(`.banner__button`).click(function (evt) {
+  evt.preventDefault()
+  // $(`.header`).removeClass(`header--menu-opened header--white`)
+  openPopup($(`.contacts`))
+})
+
+$(`.products__button--connect`).click(function (evt) {
+  evt.preventDefault()
+  // $(`.header`).removeClass(`header--menu-opened header--white`)
+  openPopup($(`.contacts`))
 })
 
 // eslint-disable-next-line no-unused-vars
