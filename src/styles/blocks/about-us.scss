@@ -11,6 +11,7 @@
   padding: 35px 50px 26px 45px;
   box-shadow: 0 5px 15px -1px rgba(253, 192, 192, 1);
   position: relative;
+  display: flex;
 
   @media (max-width: $tablet-width) {
     margin-top: 0;
@@ -30,6 +31,38 @@
     margin-top: 0;
   }
 
+}
+
+.about-us__video {
+  width: 262px;
+  height: 159px;
+  align-self: center;
+  margin-left: 68px;
+  border-radius: 6px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  video {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+}
+
+.about-us__play-button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: url("../img/icon-play.svg") no-repeat;
+  padding: 0;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  cursor: pointer;
 }
 
 .about-us__text {
