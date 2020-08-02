@@ -70,7 +70,9 @@ $(`.products__button--connect`).click(function (evt) {
 
 // Запуск видео
 
-$(`.about-us__videofile`).click(function () {
+const video = $(`.about-us__videofile`)
+
+video.click(function () {
   if(this.paused) {
     $(`.about-us__play-button`).hide()
     this.play()
@@ -83,6 +85,10 @@ $(`.about-us__videofile`).click(function () {
 $(`.about-us__play-button`).click(function () {
   $(`.about-us__play-button`).hide()
   $(`.about-us__videofile`).trigger('play')
+})
+
+video.on(`ended`, function () {
+  $(`.about-us__play-button`).show()
 })
 
 
