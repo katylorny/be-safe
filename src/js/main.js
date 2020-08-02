@@ -84,7 +84,7 @@ video.click(function () {
 
 $(`.about-us__play-button`).click(function () {
   $(`.about-us__play-button`).hide()
-  $(`.about-us__videofile`).trigger('play')
+  $(`.about-us__videofile`).prop('muted', true).trigger('play')
 })
 
 video.on(`ended`, function () {
