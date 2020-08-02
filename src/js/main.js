@@ -50,27 +50,41 @@ $(`.footer__link--contact`).click(function (evt) {
 
 $(`.nav__link--contacts`).click(function (evt) {
   evt.preventDefault()
-  // $(`.header`).removeClass(`header--menu-opened header--white`)
   openPopup($(`.contacts`))
 })
 
 $(`.nav__link--about`).click(function (evt) {
   evt.preventDefault()
-  // $(`.header`).removeClass(`header--menu-opened header--white`)
   openPopup($(`.about`))
 })
 
 $(`.banner__button`).click(function (evt) {
   evt.preventDefault()
-  // $(`.header`).removeClass(`header--menu-opened header--white`)
   openPopup($(`.contacts`))
 })
 
 $(`.products__button--connect`).click(function (evt) {
   evt.preventDefault()
-  // $(`.header`).removeClass(`header--menu-opened header--white`)
   openPopup($(`.contacts`))
 })
+
+// Запуск видео
+
+$(`.about-us__videofile`).click(function () {
+  if(this.paused) {
+    $(`.about-us__play-button`).hide()
+    this.play()
+  } else {
+    $(`.about-us__play-button`).show()
+    this.pause()
+  }
+})
+
+$(`.about-us__play-button`).click(function () {
+  $(`.about-us__play-button`).hide()
+  $(`.about-us__videofile`).trigger('play')
+})
+
 
 // eslint-disable-next-line no-unused-vars
 const swiper = new Swiper(`.our-products`, {
