@@ -73,9 +73,10 @@ $(`.products__button--connect`).click(function (evt) {
 const video = $(`.about-us__videofile`)
 
 video.click(function () {
-  if(this.paused) {
-    $(`.about-us__play-button`).hide()
-    this.play()
+  if (this.paused) {
+    this.play().then(() => {
+      $(`.about-us__play-button`).hide()
+    }).catch(e => console.log(e))
   } else {
     $(`.about-us__play-button`).show()
     this.pause()
