@@ -72,11 +72,15 @@ $(`.products__button--connect`).click(function (evt) {
 
 const video = $(`.about-us__videofile`)
 
+function startVideo(el) {
+  el.play().then(() => {
+    $(`.about-us__play-button`).hide()
+  }).catch(e => console.log(e))
+}
+
 video.click(function () {
   if (this.paused) {
-    this.play().then(() => {
-      $(`.about-us__play-button`).hide()
-    }).catch(e => console.log(e))
+    startVideo(this)
   } else {
     $(`.about-us__play-button`).show()
     this.pause()
@@ -85,7 +89,7 @@ video.click(function () {
 
 $(`.about-us__play-button`).click(function () {
   $(`.about-us__play-button`).hide()
-  $(`.about-us__videofile`).trigger('play')
+  startVideo($(`.about-us__videofile`).get(0))
 })
 
 video.on(`ended`, function () {
