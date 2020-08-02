@@ -1,46 +1,46 @@
 .nav {
 
-  @media (max-width: $tablet-width) {
-    background: white;
-    position: relative;
-    z-index: 2;
-  }
+    @media (max-width: $tablet-width) {
+        background: white;
+        position: relative;
+        z-index: 2;
+    }
 }
 
 
 .nav__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
 
-  @media (max-width: $tablet-width) {
-    display: none;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    height: calc(100vh - 77px);
-    max-width: 415px;
-    margin: 0 auto;
-  }
+    @media (max-width: $tablet-width) {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        height: calc(100vh - 77px);
+        max-width: 415px;
+        margin: 0 auto;
+    }
 }
 
 
 .nav__item {
-  margin-left: 70px;
+    margin-left: 70px;
 
-  @media (max-width: $tablet-width) {
-    margin-left: 0;
-  }
+    @media (max-width: $tablet-width) {
+        margin-left: 0;
+    }
 }
 
 .nav__link {
-  font-family: $museo-sans-cyrl;
-  font-size: 16px;
-  font-weight: 900;
-  color: $c-burgundy;
+    font-family: $museo-sans-cyrl;
+    font-size: 16px;
+    font-weight: 900;
+    color: $c-burgundy;
 
-  @media (max-width: $tablet-width) {
-    font-size: 22px;
-  }
+    @media (max-width: $tablet-width) {
+        font-size: 22px;
+    }
 }

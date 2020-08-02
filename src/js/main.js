@@ -91,9 +91,7 @@ video.on(`ended`, function () {
   $(`.about-us__play-button`).show()
 })
 
-
-// eslint-disable-next-line no-unused-vars
-const swiper = new Swiper(`.our-products`, {
+new Swiper(`.our-products`, {
   slidesPerView: `auto`,
   spaceBetween: 20,
   centeredSlides: true,
@@ -111,7 +109,7 @@ const swiper = new Swiper(`.our-products`, {
   }
 })
 
-const swiperClients = new Swiper(`.clients__wrapper`, {
+new Swiper(`.clients__wrapper`, {
   slidesPerView: `auto`,
   spaceBetween: 20,
   breakpoints: {
@@ -123,7 +121,7 @@ const swiperClients = new Swiper(`.clients__wrapper`, {
   }
 })
 
-const swiperBreadcrumbs = new Swiper(`.products__sections`, {
+new Swiper(`.products__sections`, {
   slidesPerView: `auto`,
   spaceBetween: 10,
   // centeredSlides: true,

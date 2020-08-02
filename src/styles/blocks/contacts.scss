@@ -1,152 +1,152 @@
 .contacts {
 
-  @media (max-width: $tablet-width) {
-    //background: $c-main-white;
-  }
-
-  h2 {
-    font-family: $pt-sans-bold;
-    font-size: 20px;
-    font-weight: bold;
-
     @media (max-width: $tablet-width) {
-      font-size: 22px;
-    }
-  }
-
-  p {
-    font-family: $pt-sans-bold;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  p.contacts__call-us {
-    color: #fa4039;
-
-    @media (max-width: $tablet-width) {
-      display: flex;
-      flex-direction: column;
+        //background: $c-main-white;
     }
 
-    span {
-      margin-right: 5px;
+    h2 {
+        font-family: $pt-sans-bold;
+        font-size: 20px;
+        font-weight: bold;
+
+        @media (max-width: $tablet-width) {
+            font-size: 22px;
+        }
     }
-  }
+
+    p {
+        font-family: $pt-sans-bold;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p.contacts__call-us {
+        color: #fa4039;
+
+        @media (max-width: $tablet-width) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        span {
+            margin-right: 5px;
+        }
+    }
 }
 
 .contacts__form {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 
 
-  input {
-    padding: 9px 16px 10px;
-    border-radius: 4px;
-    border: solid 1px #cacaca;
-  }
+    input {
+        padding: 9px 16px 10px;
+        border-radius: 4px;
+        border: solid 1px #cacaca;
+    }
 }
 
 .contacts__label {
-  max-width: 160px;
-  display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
-  color: $c-light-grey;
-  //font-family: MuseoSansCyrl;
-  font-size: 12px;
-  //margin: 0 10px 21px;
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: $c-light-grey;
+    //font-family: MuseoSansCyrl;
+    font-size: 12px;
+    //margin: 0 10px 21px;
 
-  span {
-    margin-bottom: 10px;
-    width: fit-content;
-  }
+    span {
+        margin-bottom: 10px;
+        width: fit-content;
+    }
 }
 
 .contacts__label--input {
-  margin: 0 10px 21px 0;
+    margin: 0 10px 21px 0;
 
-  @media (max-width: $tablet-width) {
-    width: 100%;
-    max-width: 100%;
-    margin-right: 0;
-  }
+    @media (max-width: $tablet-width) {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
 
-  &:last-child {
-    margin-right: 0;
-  }
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .contacts__label--textarea {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
 
-  textarea {
-    height: 115px;
-    resize: none;
-    padding: 9px 16px 10px;
-    border-radius: 4px;
-    border: solid 1px #cacaca;
-  }
+    textarea {
+        height: 115px;
+        resize: none;
+        padding: 9px 16px 10px;
+        border-radius: 4px;
+        border: solid 1px #cacaca;
+    }
 }
 
 .contacts__buttons {
-  display: flex;
+    display: flex;
 
-  @media (max-width: $tablet-width) {
-    flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-  }
+    @media (max-width: $tablet-width) {
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
 }
 
 .contacts__button {
-  border-radius: 4px;
-  margin-right: 20px;
-  min-width: 130px;
-  margin-bottom: 30px;
+    border-radius: 4px;
+    margin-right: 20px;
+    min-width: 130px;
+    margin-bottom: 30px;
 
-  @media (max-width: $tablet-width) {
-    width: 100%;
-    max-width: 295px;
-    border-radius: 14px;
-    margin-right: 0;
-  }
+    @media (max-width: $tablet-width) {
+        width: 100%;
+        max-width: 295px;
+        border-radius: 14px;
+        margin-right: 0;
+    }
 }
 
 .contacts__button--send {
-  background: $c-red-gradient;
-  box-shadow: 0 7px 4px -1px rgba(253, 192, 192, 1);
+    background: $c-red-gradient;
+    box-shadow: 0 7px 4px -1px rgba(253, 192, 192, 1);
 }
 
 .contacts__button--cancel {
-  background: $c-light-rose;
-  color: $c-section-color;
+    background: $c-light-rose;
+    color: $c-section-color;
 }
 
 .contacts__call-us-button {
-  display: none;
+    display: none;
 
-  @media (max-width: $tablet-width) {
-    display: block;
-    background: black;
-    width: 100%;
-    max-width: 295px;
-    margin: 0 auto;
-    border-radius: 14px;
-    text-align: center;
-  }
+    @media (max-width: $tablet-width) {
+        display: block;
+        background: black;
+        width: 100%;
+        max-width: 295px;
+        margin: 0 auto;
+        border-radius: 14px;
+        text-align: center;
+    }
 }
 
 .contacts__required-input {
-  position: relative;
+    position: relative;
 
-  &::after {
-    content: "*";
-    position: absolute;
-    top: -6px;
-    right: -11px;
-    font-size: 24px;
-    color: red;
-  }
+    &::after {
+        content: "*";
+        position: absolute;
+        top: -6px;
+        right: -11px;
+        font-size: 24px;
+        color: red;
+    }
 }

@@ -3,24 +3,24 @@
 }
 
 .sections__list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px;
 }
 
 .sections__item {
-  width: auto;
-  border-radius: 30px;
-  background-color: $c-section;
-  padding: 11px 16px;
-  color: $c-section-color;
-  font-family: $museo-sans-cyrl;
-  font-weight: 500;
-  font-size: 15px;
+    width: auto;
+    border-radius: 30px;
+    background-color: $c-section;
+    padding: 11px 16px;
+    color: $c-section-color;
+    font-family: $museo-sans-cyrl;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .sections__item--active {
-  background: $c-red-gradient;
-  box-shadow: 0 5px 4px -1px rgba(253, 192, 192, 1);
-  color: white;
+    background: $c-red-gradient;
+    box-shadow: 0 5px 4px -1px rgba(253, 192, 192, 1);
+    color: white;
 }

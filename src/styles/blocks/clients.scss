@@ -1,31 +1,32 @@
 .clients {
-  padding: 75px 0 75px;
+    padding: 75px 0 75px;
 
-  h2 {
-    text-align: center;
-    display: none;
+    h2 {
+        text-align: center;
+        display: none;
 
-    @media (max-width: $tablet-width) {
-      display: block;
+        @media (max-width: $tablet-width) {
+            display: block;
+        }
     }
-  }
 }
 
 .clients__list {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .clients__wrapper.container {
-  @media (max-width: $tablet-width) {
-    overflow-x: hidden;
-    max-width: 100%;
-  }
+
+    @media (max-width: $tablet-width) {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
 }
 
 .clients__item.swiper-slide {
-  width: auto;
+    width: auto;
 }
