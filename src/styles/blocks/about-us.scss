@@ -63,6 +63,14 @@
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .about-us__text {
