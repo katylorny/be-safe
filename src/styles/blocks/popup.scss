@@ -1,92 +1,94 @@
 .popup {
-    width: 620px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 30px 40px 30px 40px;
-    z-index: 7;
-    border-radius: 10px;
-    flex: 1;
+  width: 620px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px 40px 30px 40px;
+  z-index: 7;
+  border-radius: 10px;
+  flex: 1;
+  max-height: 500px;
+  overflow-y: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    //max-width: 415px;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 auto;
+    position: static;
+    padding-top: $header-height;
+    transform: none;
+    border-radius: 0;
+    background: $c-main-white;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    opacity: 0.5;
+    font-family: $pt-sans-regular;
+    font-size: 18px;
 
     @media (max-width: $tablet-width) {
-        width: 100%;
-        //max-width: 415px;
-        padding-right: 0;
-        padding-left: 0;
-        margin: 0 auto;
-        position: static;
-        padding-top: $header-height;
-        transform: none;
-        border-radius: 0;
-        background: $c-main-white;
+      font-size: 18px;
     }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        opacity: 0.5;
-        font-family: $pt-sans-regular;
-        font-size: 18px;
-
-        @media (max-width: $tablet-width) {
-            font-size: 18px;
-        }
-    }
+  }
 }
 
 .popup__wrapper {
 
-    @media (max-width: $tablet-width) {
-        max-width: 415px;
-        margin: 0 auto;
-        padding: 0 40px;
-    }
+  @media (max-width: $tablet-width) {
+    max-width: 415px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
 }
 
 .popup__close-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  text-transform: uppercase;
+  font-family: $pt-sans-bold;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  padding-left: 20px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &::after {
+    content: "";
     position: absolute;
-    top: 14px;
-    right: 14px;
-    text-transform: uppercase;
-    font-family: $pt-sans-bold;
-    font-size: 14px;
-    font-weight: bold;
-    border: none;
-    background: transparent;
-    padding-left: 20px;
-
-    @media (max-width: $tablet-width) {
-        display: none;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 6px;
-        left: 7px;
-        width: 8px;
-        height: 8px;
-        background: url("../img/icon-close-popup.svg") no-repeat;
-    }
+    top: 6px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    background: url("../img/icon-close-popup.svg") no-repeat;
+  }
 }
 
 .popup__breadcrumbs {
-    display: none;
+  display: none;
 
-    @media (max-width: $tablet-width) {
-        display: flex;
-        font-size: 14px;
+  @media (max-width: $tablet-width) {
+    display: flex;
+    font-size: 14px;
 
-        .breadcrumbs__item::after {
-            top: 5px;
-        }
+    .breadcrumbs__item::after {
+      top: 5px;
     }
+  }
 }
 
 .popup--closed {
-    display: none;
+  display: none;
 }
