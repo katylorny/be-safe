@@ -1,72 +1,73 @@
 .our-products {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+
+  h2 {
+    margin: 0 auto 10px;
+  }
+
+  .swiper-pagination {
     display: flex;
-    flex-direction: column;
-    padding-top: 40px;
+    align-items: center;
+    justify-content: center;
 
-    h2 {
-        margin: 0 auto 10px;
+    @media (min-width: $tablet-width) {
+      display: none;
     }
+  }
 
-    .swiper-pagination {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  .swiper-pagination-bullet {
+    background: #fa4841;
+    width: 6px;
+    height: 6px;
+    opacity: 2;
+  }
 
-        @media (min-width: $tablet-width) {
-            display: none;
-        }
-    }
-
-    .swiper-pagination-bullet {
-        background: #fa4841;
-        width: 6px;
-        height: 6px;
-        opacity: 2;
-    }
-
-    .swiper-pagination-bullet-active {
-        width: 12px;
-        height: 12px;
-        background: transparent;
-        border: 3px solid #fa4841;
-        border-radius: 50%;
-    }
+  .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 3px solid #fa4841;
+    border-radius: 50%;
+  }
 }
 
 .our-products.container {
 
-    @media (max-width: $tablet-width) {
-        max-width: 100%;
-        padding-bottom: 30px;
-    }
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
 }
 
 .our-products__list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 
 .our-products__item {
+  width: 300px;
+  height: 210px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px -1px rgba(253, 192, 192, 1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  //padding-top: 152px;
+
+  @media (max-width: $tablet-width) {
     width: 300px;
     height: 210px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px -1px rgba(253, 192, 192, 1);
+  }
+
+  h3 {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    //padding-top: 152px;
-
-    @media (max-width: $tablet-width) {
-        width: 300px;
-        height: 210px;
-    }
-
-    h3 {
-        text-align: center;
-    }
+  }
 }
