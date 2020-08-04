@@ -1,32 +1,72 @@
 .clients {
-    padding: 75px 0 75px;
+  padding: 75px 0 75px;
+  //position: ;
 
-    h2 {
-        text-align: center;
-        display: none;
+  h2 {
+    text-align: center;
+    display: none;
 
-        @media (max-width: $tablet-width) {
-            display: block;
-        }
+    @media (max-width: $tablet-width) {
+      display: block;
     }
+  }
+
+  .swiper-button-next.swiper-button-disabled,
+  .swiper-button-prev.swiper-button-disabled {
+    //display: none;
+  }
+
+  .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/icon-more.svg");
+  }
+
+  .swiper-container-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-container-rtl {
+    transform: rotate(180deg);
+  }
+
+  //.container {
+  //  @media (min-width: $mobile-width) {
+  //    max-width: 900px;
+  //  }
+  //}
+
+  @media (max-width: $tablet-width) {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    right: -4px;
+  }
+
+  .swiper-container-rtl .swiper-button-prev {
+    left: -4px;
+  }
 }
 
+
 .clients__list {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .clients__wrapper.container {
 
-    @media (max-width: $tablet-width) {
-        overflow-x: hidden;
-        max-width: 100%;
-    }
+  @media (max-width: $tablet-width) {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
 }
 
 .clients__item.swiper-slide {
-    width: auto;
+  width: auto;
 }
+

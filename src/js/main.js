@@ -2,19 +2,19 @@ import $ from '../local_modules/jquery/dist/jquery.min'
 import Swiper from "swiper"
 
 $(document).ready(() => {
-  // eslint-disable-next-line no-console
-  console.log(`document ready`)
+    // eslint-disable-next-line no-console
+    console.log(`document ready`)
 })
 
 $(`.header__menu-open-button`).click(function () {
-  $(`.header`).toggleClass(`header--menu-opened header--white`)
-  $(`body`).toggleClass(`opened-menu`)
+    $(`.header`).toggleClass(`header--menu-opened header--white`)
+    $(`body`).toggleClass(`opened-menu`)
 })
 
 // закрытие попапа
 $(`.popup__close-button`).click(function () {
-  $(`.popup`).addClass(`popup--closed`)
-  $(`body`).removeClass(`opened-popup`)
+    $(`.popup`).addClass(`popup--closed`)
+    $(`body`).removeClass(`opened-popup`)
 })
 
 // при открытии попапа:
@@ -24,48 +24,48 @@ $(`.popup__close-button`).click(function () {
 const body = $(`body`)
 
 function openPopup(popup) {
-  $(`.header`).removeClass(`header--menu-opened header--white`)
-  body.removeClass(`opened-menu`)
-  $(`.popup`).addClass(`popup--closed`)
-  popup.removeClass(`popup--closed`)
-  body.addClass(`opened-popup`)
+    $(`.header`).removeClass(`header--menu-opened header--white`)
+    body.removeClass(`opened-menu`)
+    $(`.popup`).addClass(`popup--closed`)
+    popup.removeClass(`popup--closed`)
+    body.addClass(`opened-popup`)
 }
 
 
 // попапы
 
 $(`.about-us__read-more`).click(function () {
-  openPopup($(`.about`))
+    openPopup($(`.about`))
 })
 
 $(`.footer__link--msds`).click(function (evt) {
-  evt.preventDefault()
-  openPopup($(`.msds`))
+    evt.preventDefault()
+    openPopup($(`.msds`))
 })
 
 $(`.footer__link--contact`).click(function (evt) {
-  evt.preventDefault()
-  openPopup($(`.contacts`))
+    evt.preventDefault()
+    openPopup($(`.contacts`))
 })
 
 $(`.nav__link--contacts`).click(function (evt) {
-  evt.preventDefault()
-  openPopup($(`.contacts`))
+    evt.preventDefault()
+    openPopup($(`.contacts`))
 })
 
 $(`.nav__link--about`).click(function (evt) {
-  evt.preventDefault()
-  openPopup($(`.about`))
+    evt.preventDefault()
+    openPopup($(`.about`))
 })
 
 $(`.banner__button`).click(function (evt) {
-  evt.preventDefault()
-  openPopup($(`.contacts`))
+    evt.preventDefault()
+    openPopup($(`.contacts`))
 })
 
 $(`.products__button--connect`).click(function (evt) {
-  evt.preventDefault()
-  openPopup($(`.contacts`))
+    evt.preventDefault()
+    openPopup($(`.contacts`))
 })
 
 // Запуск видео
@@ -73,69 +73,73 @@ $(`.products__button--connect`).click(function (evt) {
 const video = $(`.about-us__videofile`)
 
 function startVideo(el) {
-  el.play().then(() => {
-    $(`.about-us__play-button`).hide()
-  }).catch(e => console.log(e))
+    el.play().then(() => {
+        $(`.about-us__play-button`).hide()
+    }).catch((e) => console.log(e))
 }
 
 video.click(function () {
-  if (this.paused) {
-    startVideo(this)
-  } else {
-    $(`.about-us__play-button`).show()
-    this.pause()
-  }
+    if (this.paused) {
+        startVideo(this)
+    } else {
+        $(`.about-us__play-button`).show()
+        this.pause()
+    }
 })
 
 $(`.about-us__play-button`).click(function () {
-  $(`.about-us__play-button`).hide()
-  startVideo($(`.about-us__videofile`).get(0))
+    $(`.about-us__play-button`).hide()
+    startVideo($(`.about-us__videofile`).get(0))
 })
 
 video.on(`ended`, function () {
-  $(`.about-us__play-button`).show()
+    $(`.about-us__play-button`).show()
 })
 
 new Swiper(`.our-products`, {
-  slidesPerView: `auto`,
-  spaceBetween: 20,
-  centeredSlides: true,
-  pagination: {
-    el: `.swiper-pagination`,
-    clickable: true,
-  },
-  breakpoints: {
+    slidesPerView: `auto`,
+    spaceBetween: 20,
+    centeredSlides: true,
+    pagination: {
+        el: `.swiper-pagination`,
+        clickable: true,
+    },
+    breakpoints: {
     // when window width is >= 640px
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 40,
-      centeredSlides: false,
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+            centeredSlides: false,
+        }
     }
-  }
 })
 
 new Swiper(`.clients__wrapper`, {
-  slidesPerView: `auto`,
-  spaceBetween: 20,
-  breakpoints: {
+    slidesPerView: `auto`,
+    navigation: {
+        nextEl: `.swiper-button-next`,
+        prevEl: `.swiper-button-prev`,
+    },
+    spaceBetween: 20,
+    breakpoints: {
     // when window width is >= 640px
-    768: {
-      slidesPerView: 5,
-      // spaceBetween: 40,
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+        }
     }
-  }
 })
 
 new Swiper(`.products__sections`, {
-  slidesPerView: `auto`,
-  spaceBetween: 10,
-  // centeredSlides: true,
-  breakpoints: {
+    slidesPerView: `auto`,
+    spaceBetween: 10,
+    // centeredSlides: true,
+    breakpoints: {
     // when window width is >= 640px
-    768: {
-      // slidesPerView: 5,
-      // spaceBetween: 40,
+        768: {
+            // slidesPerView: 5,
+            // spaceBetween: 40,
+        }
     }
-  }
 })
 
