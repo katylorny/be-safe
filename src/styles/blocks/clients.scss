@@ -68,5 +68,11 @@
 
 .clients__item.swiper-slide {
   width: auto;
+  height: 86px;
+
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
