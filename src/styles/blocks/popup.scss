@@ -9,8 +9,6 @@
   z-index: 7;
   border-radius: 10px;
   flex: 1;
-  max-height: 500px;
-  overflow-y: auto;
   font-family: $pt-sans-regular;
   font-size: 18px;
 
@@ -25,6 +23,11 @@
     transform: none;
     border-radius: 0;
     background: $c-main-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    overflow-y: auto;
+    max-height: 500px;
   }
 
   h2 {

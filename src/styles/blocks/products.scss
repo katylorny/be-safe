@@ -17,6 +17,7 @@
     @media (max-width: $tablet-width) {
         flex-direction: column;
         padding-bottom: 50px;
+        align-items: center;
     }
 }
 
@@ -28,6 +29,7 @@
         flex-direction: column;
         max-width: 300px;
         align-items: center;
+         margin: 0 auto;
     }
 }
 
