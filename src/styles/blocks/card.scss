@@ -89,4 +89,8 @@
         height: 13px;
         background: url("../img/icon-more-details.svg") no-repeat;
     }
+
+    &:focus {
+      outline: none;
+    }
 }
