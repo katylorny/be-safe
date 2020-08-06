@@ -1,62 +1,64 @@
 .products {
-    padding-top: $header-height;
-    padding-bottom: 72px;
-    overflow-x: hidden;
+  padding-top: $header-height;
+  padding-bottom: 72px;
+  overflow-x: hidden;
 
-    h1 {
-        font-family: $museo-sans-cyrl;
-        font-size: 22px;
-        font-weight: bold;
-    }
+  h1 {
+    font-family: $museo-sans-cyrl;
+    font-size: 22px;
+    font-weight: bold;
+  }
 }
 
 .products__cards {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-    @media (max-width: $tablet-width) {
-        flex-direction: column;
-        padding-bottom: 50px;
-        align-items: center;
-    }
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    padding-bottom: 50px;
+    align-items: center;
+  }
 }
 
 .products__buttons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    @media (max-width: $tablet-width) {
-        flex-direction: column;
-        max-width: 300px;
-        align-items: center;
-         margin: 0 auto;
-    }
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 .products__button {
-    margin-right: 20px;
-    border-radius: 14px;
-    min-width: 215px;
-    font-family: $pt-sans-caption;
-    font-size: 16px;
-    font-weight: normal;
-    cursor: pointer;
+  margin-right: 20px;
+  border-radius: 14px;
+  min-width: 215px;
+  font-family: $pt-sans-caption;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  display: block;
+  text-align: center;
 
-    @media (max-width: $tablet-width) {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .products__button--catalog {
-    background: $c-red-gradient;
+  background: $c-red-gradient;
 }
 
 .products__button--connect {
-    background: black;
+  background: black;
 }
 
 .products__sections {
-    width: 100vw;
+  width: 100vw;
 }
