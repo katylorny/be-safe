@@ -3,7 +3,7 @@ extends common/layout
 include common/header
 
 block header
- +header('header--products')
+  +header('header--products')
 block content
   main.main.main--products
     section.products
@@ -19,6 +19,22 @@ block content
             a(href="#").sections__item.sections__item--active.swiper-slide All products
             a(href="#").sections__item.swiper-slide Sanitizers
             a(href="#").sections__item.swiper-slide Sanitizing wipes
+        .products__details-information.about-us
+          .about-us__wrapper
+            .about-us__left
+              h2 Details information
+              .about-us__text.about-us__text--closed
+                p We strive to provide the highest quality products to our customers. Today, BeSafe™ Industries products are widely used all over the world to ensure the safety and health of our users. It is our duty to provide products that meet multiple national standards as we continue research and development of more innovative products to meet our
+                  //span.about-us__additional-text It is our duty to provide products that meet multiple national standards as we continue research and development of more innovative products to meet our goal. We provide complete customer service, stable and excellent product quality Our competitive prices, have allowed us to be chosen by many retailers as their suppliers and have become long-term
+              button.about-us__read-more.button(type="button") Read more
+            .about-us__video
+
+              iframe(width="262" height="159" src="https://www.youtube.com/embed/1XuOFg4p83o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        //.products__sections.sections.swiper-container
+        //  .sections__list.swiper-wrapper
+        //    a(href="#").sections__item.sections__item--active.swiper-slide All
+        //    a(href="#").sections__item.swiper-slide Sanitizers
+        //    a(href="#").sections__item.swiper-slide Sanitizing wipes
         .products__cards
           .products__card.card
             .card__images
@@ -32,7 +48,8 @@ block content
                 .card__little-img
                   img(src="img/mask.jpg")
             h3 Protective Masks Simple
-            p We strive to provide the highest quality products to our customers. Today, BeSafe™ Industries products are widely used all.
+            p We strive to provide the highest quality products to our customers. Today, BeSafe™ Industries products are widely used all over the world to ensure the safety and health of our users.
+              span.about-us__additional-text It is our duty to provide products that meet multiple national standards as we continue research and development of more innovative products to meet our goal. We provide complete customer service, stable and excellent product quality Our competitive prices, have allowed us to be chosen by many retailers as their suppliers and have become long-term
             button.card__more-details(type="button") More details
           .products__card.card
             .card__images

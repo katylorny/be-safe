@@ -62,3 +62,24 @@
 .products__sections {
   width: 100vw;
 }
+
+.products__details-information {
+  border-bottom: 2px solid #dddbdb;
+  margin-bottom: 40px;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+
+  .about-us__wrapper {
+    background: transparent;
+    box-shadow: none;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .about-us__text--closed::after {
+    background: linear-gradient(180deg, rgba(251,251,251,0) 0%, rgba(251,251,251,1) 100%);
+    height: 80px;
+  }
+}
