@@ -126,6 +126,7 @@ new Swiper(`.clients__wrapper`, {
         768: {
             slidesPerView: 5,
             spaceBetween: 40,
+            slidesPerGroup: 4,
         }
     }
 })
