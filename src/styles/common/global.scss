@@ -23,21 +23,41 @@ body {
     width: 100%;
 }
 
-.body-lock {
-    overflow-y: scroll;
-    position: fixed;
-}
+//.body-lock {
+//    overflow-y: scroll;
+//    position: fixed;
+//}
 
-.overlay {
-    display: none;
-    background: rgba(52, 51, 51, 0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 6;
-    overflow: auto;
+//.overlay {
+//    display: none;
+//    background: rgba(52, 51, 51, 0.6);
+//    position: fixed;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//    z-index: 6;
+//    overflow: auto;
+//}
+
+.wrapper {
+  display: none;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  //display: flex;
+  background: rgba(52, 51, 51, 0.6);
+  width: 100%;
+  height: 100%;
+  //justify-content: center;
+  z-index: 6;
+  flex: 1;
+
+  @media (max-width: $tablet-width) {
+    position: static;
+    background: #fbfbfb;
+  }
 }
 
 img {
@@ -59,18 +79,20 @@ a {
 }
 
 .opened-popup {
-    .overlay {
-        display: block;
-    }
+    //.overlay {
+    //    display: block;
+    //}
+  overflow: hidden;
 
     @media (max-width: $tablet-width) {
+      overflow: auto;
         .main {
             display: none;
         }
 
-        .overlay {
-            display: none;
-        }
+        //.overlay {
+        //    display: none;
+        //}
     }
 }
 

@@ -15,7 +15,11 @@ $(`.header__menu-open-button`).click(function () {
 $(`.popup__close-button`).click(function () {
     $(`.popup`).addClass(`popup--closed`)
     $(`body`).removeClass(`opened-popup`)
+    $(`.wrapper`).hide()
 })
+
+// $(`.wrapper`).click(function () {
+// })
 
 // при открытии попапа:
 // добавить body класс .opened-popup
@@ -29,6 +33,7 @@ function openPopup(popup) {
     $(`.popup`).addClass(`popup--closed`)
     popup.removeClass(`popup--closed`)
     body.addClass(`opened-popup`)
+    $(`.wrapper`).show()
 }
 
 
@@ -66,6 +71,11 @@ $(`.banner__button`).click(function (evt) {
 $(`.products__button--connect`).click(function (evt) {
     evt.preventDefault()
     openPopup($(`.contacts`))
+})
+
+$(`.card__more-details`).click(function (evt) {
+    evt.preventDefault()
+    openPopup($(`.detail`))
 })
 
 // Запуск видео

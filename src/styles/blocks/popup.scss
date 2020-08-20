@@ -1,9 +1,10 @@
 .popup {
-  width: 620px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 620px;
+  position: relative;
+  //top: 50%;
+  //left: 50%;
+  margin-left: 50%;
+  transform: translateX(-50%);
   background: white;
   padding: 30px 40px 30px 40px;
   z-index: 7;
@@ -11,6 +12,7 @@
   flex: 1;
   font-family: $pt-sans-regular;
   font-size: 18px;
+  margin-top: 20vh;
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -26,8 +28,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    overflow-y: auto;
-    max-height: 500px;
+    //overflow-y: auto;
+    //max-height: 500px;
   }
 
   h2 {
