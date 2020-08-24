@@ -1,6 +1,10 @@
 .clients {
   padding: 75px 0 75px;
-  //position: ;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 3px;
+  }
 
   h2 {
     text-align: center;

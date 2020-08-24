@@ -3,8 +3,16 @@
   flex-direction: column;
   padding-top: 40px;
 
+  @media (max-width: $tablet-width) {
+    padding-top: 11px;
+  }
+
   h2 {
     margin: 0 auto 10px;
+
+    @media (max-width: $tablet-width) {
+      font-size: 20px;
+    }
   }
 
   .swiper-pagination {
