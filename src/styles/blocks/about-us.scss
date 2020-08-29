@@ -35,7 +35,8 @@
 
     @media (max-width: $tablet-width) {
       font-size: 20px;
-      margin-left: 41px;
+      //margin-left: 41px;
+      margin-left: 0;
       margin-bottom: 25px;
     }
   }
@@ -46,7 +47,7 @@
 
     @media (max-width: $tablet-width) {
       line-height: normal;
-      max-width: 292px;
+      //max-width: 292px;
     }
   }
 }
@@ -54,9 +55,13 @@
 .about-us__content {
   display: flex;
   position: relative;
+  padding-right: 262px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
   }
 }
 
@@ -66,7 +71,7 @@
   @media (max-width: $tablet-width) {
     order: 2;
     max-width: 100%;
-    margin-left: 39px;
+    //margin-left: 39px;
   }
 }
 
@@ -86,6 +91,7 @@
     height: 172px;
     position: static;
     margin-bottom: 22px;
+    align-self: flex-start;
   }
 
   iframe {
