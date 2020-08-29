@@ -40,7 +40,7 @@ function openPopup(popup) {
 // попапы
 
 $(`.about-us__read-more`).click(function () {
-    openPopup($(`.about`))
+    openPopup($(`.category`))
 })
 
 $(`.footer__link--msds`).click(function (evt) {
