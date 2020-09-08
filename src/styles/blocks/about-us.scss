@@ -1,5 +1,6 @@
 .about-us {
 
+
   @media (max-width: $tablet-width) {
     background: white;
   }
@@ -12,10 +13,7 @@
   padding: 35px 50px 26px 45px;
   box-shadow: 0 5px 15px -1px rgba(253, 192, 192, 1);
   position: relative;
-  //display: flex;
-  //flex-wrap: wrap;
-  //flex-direction: column;
-  //justify-content: space-between;
+  min-height: 279px;
 
   @media (max-width: $tablet-width) {
     margin-top: 0;
@@ -51,7 +49,7 @@
 .about-us__content {
   display: flex;
   position: relative;
-  padding-right: 262px;
+  padding-right: 361px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
@@ -62,7 +60,7 @@
 }
 
 .about-us__left {
-  max-width: 550px;
+  max-width: 435px;
 
   @media (max-width: $tablet-width) {
     order: 2;
@@ -72,8 +70,8 @@
 }
 
 .about-us__video {
-  width: 262px;
-  height: 159px;
+  //width: 262px;
+  //height: 159px;
   align-self: center;
   margin-left: 5px;
   border-radius: 6px;
@@ -82,10 +80,9 @@
   right: -17px;
 
   @media (max-width: $tablet-width) {
-    //display: none;
-    width: 282px;
-    height: 172px;
-    position: static;
+    position: relative;
+    top: 0;
+    left: 0;
     margin-bottom: 22px;
     align-self: flex-start;
   }
@@ -101,6 +98,18 @@
     }
   }
 
+}
+
+.about-us__videofile {
+  object-fit: cover;
+  width: 361px;
+  border-radius: 6px;
+  height: 219px;
+
+  @media (max-width: $tablet-width) {
+    width: 299px;
+    height: 180px;
+  }
 }
 
 .about-us__play-button {
@@ -126,8 +135,9 @@
 
 .about-us__text {
   padding-bottom: 7px;
-  max-height: 88px;
+  //max-height: 88px;
   overflow: hidden;
+  max-height: 135px;
 
   @media (max-width: $tablet-width) {
     max-height: 100%;

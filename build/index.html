@@ -40,7 +40,13 @@
                 <button class="about-us__read-more button" type="button">Read more</button>
               </div>
               <div class="about-us__video">
-                <iframe width="262" height="159" src="https://www.youtube.com/embed/1XuOFg4p83o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <video class="about-us__videofile" preload="auto" width="361" height="219" muted="muted">
+                  <source src="video/trailer.mp4" type="video/mp4">
+                  <source src="video/trailer.webm" type="video/webm">
+                  <source src="video/trailer.ogv" type="video/ogg">
+                  <p>Your user agent does not support the HTML5 Video element.</p>
+                </video>
+                <button class="about-us__play-button" type="button"></button>
               </div>
             </div>
           </div>
