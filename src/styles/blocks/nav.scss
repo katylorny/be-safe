@@ -35,9 +35,8 @@
 }
 
 .nav__link {
-    font-family: $museo-sans-cyrl;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: bold;
     color: $c-burgundy;
 
     @media (max-width: $tablet-width) {

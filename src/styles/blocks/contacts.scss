@@ -5,7 +5,6 @@
     }
 
     h2 {
-        font-family: $pt-sans-bold;
         font-size: 20px;
         font-weight: bold;
 
@@ -15,7 +14,6 @@
     }
 
     p {
-        font-family: $pt-sans-bold;
         font-size: 20px;
         font-weight: bold;
     }
@@ -52,9 +50,7 @@
     flex-direction: column;
     text-transform: uppercase;
     color: $c-light-grey;
-    //font-family: MuseoSansCyrl;
     font-size: 12px;
-    //margin: 0 10px 21px;
 
     span {
         margin-bottom: 10px;
