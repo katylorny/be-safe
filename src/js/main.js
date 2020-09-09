@@ -89,6 +89,7 @@ const video = $(`.about-us__videofile`)
 function startVideo(el) {
     el.play().then(() => {
         $(`.about-us__play-button`).hide()
+      // eslint-disable-next-line no-console
     }).catch((e) => console.log(e))
 }
 
@@ -110,6 +111,7 @@ video.on(`ended`, function () {
     $(`.about-us__play-button`).show()
 })
 
+// eslint-disable-next-line no-new
 new Swiper(`.our-products`, {
     slidesPerView: `auto`,
     spaceBetween: 20,
@@ -128,6 +130,7 @@ new Swiper(`.our-products`, {
     }
 })
 
+// eslint-disable-next-line no-new
 new Swiper(`.clients__wrapper`, {
     slidesPerView: `auto`,
     navigation: {
@@ -145,6 +148,7 @@ new Swiper(`.clients__wrapper`, {
     }
 })
 
+// eslint-disable-next-line no-new
 new Swiper(`.products__sections`, {
     slidesPerView: `auto`,
     spaceBetween: 10,

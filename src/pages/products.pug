@@ -30,12 +30,12 @@ block content
                       span.about-us__additional-text It is our duty to provide products that meet multiple national standards as we continue research and development of more
                   button.about-us__read-more.button(type="button") Read more
                 .about-us__video
-                  iframe(width="262" height="159" src="https://www.youtube.com/embed/1XuOFg4p83o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-        //.products__sections.sections.swiper-container
-        //  .sections__list.swiper-wrapper
-        //    a(href="#").sections__item.sections__item--active.swiper-slide All
-        //    a(href="#").sections__item.swiper-slide Sanitizers
-        //    a(href="#").sections__item.swiper-slide Sanitizing wipes
+                  video.about-us__videofile(preload='auto' width="361" height="219" muted="muted")
+                    source(src='video/trailer.mp4' type='video/mp4')
+                    source(src='video/trailer.webm' type='video/webm')
+                    source(src='video/trailer.ogv' type='video/ogg')
+                    p Your user agent does not support the HTML5 Video element.
+                  button.about-us__play-button(type="button")
         .products__cards
           .products__card.card
             .card__images
