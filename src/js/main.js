@@ -43,6 +43,10 @@ $(`.about-us__read-more`).click(function () {
     openPopup($(`.about`))
 })
 
+$(`.category__read-more`).click(function () {
+    openPopup($(`.category`))
+})
+
 $(`.footer__link--msds`).click(function (evt) {
     evt.preventDefault()
     openPopup($(`.msds`))
